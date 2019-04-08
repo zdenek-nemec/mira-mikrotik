@@ -4,6 +4,7 @@ Launcher for Wabbit WiFi logger
 ## Wabbit WiFi logger
 
 Mega: [https://mega.nz/#F!XoE2haiT](https://mega.nz/#F!XoE2haiT)
+Ulož.to: [https://uloz.to/!ZzXIqiQdoK5c/wifi-zip](https://uloz.to/!ZzXIqiQdoK5c/wifi-zip)
 
 Program:
 
