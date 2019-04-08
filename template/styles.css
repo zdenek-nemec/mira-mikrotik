@@ -1,0 +1,22 @@
+h1 {
+	color: blue;
+}
+
+.messageOk {
+	color: green;
+}
+
+.messageError {
+	color: red;
+}
+
+#messageDebug {
+	white-space: pre;
+}
+
+/*
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+*/

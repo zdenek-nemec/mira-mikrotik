@@ -1,0 +1,101 @@
+<DOCTYPE! html>
+
+<html>
+
+	<head>
+
+		<link rel="stylesheet" href="styles.css">
+		<script src="script.js"></script>
+
+	</head>
+
+	<body>
+
+		<h1>Mikrotik</h1>
+
+		<h2>Nastavení</h2>
+
+		<table>
+			<tr>
+				<th>Proměnná</th>
+				<th>Hodnota</th>
+				<th>Stav</th>
+			</tr>
+
+			<tr>
+				<td>Název</td>
+				<td>
+					<input type="text" name="inputInterface" id="inputInterface" value="wlan1">
+				</td>
+				<td>
+					<span id="messageInterfaceOk" class="messageOk" style="display:none">Název je v pořádku</span>
+					<span id="messageInterfaceError" class="messageError" style="display:none">Název musí mít 1-32 znaků!</span>
+				</td>
+			</tr>
+
+			<tr>
+				<td>IP</td>
+				<td>
+					<input type="text" name="inputIp" id="inputIp" value="192.168.88.11">
+				</td>
+				<td>
+					<span id="messageIpOk" class="messageOk" style="display:none">IP je v pořádku</span>
+					<span id="messageIpError" class="messageError" style="display:none">IP musí být ve formátu xxx.xxx.xxx.xxx!</span>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Port</td>
+				<td>
+					<input type="text" name="inputPort" id="inputPort" value="8728">
+				</td>
+				<td>
+					<span id="messagePortOk" class="messageOk" style="display:none">Port je v pořádku</span>
+					<span id="messagePortError" class="messageError" style="display:none">Port musí být číslo v rozsahu 0-65535!</span>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Uživatel</td>
+				<td>
+					<input type="text" name="inputUser" id="inputUser" value="API">
+				</td>
+				<td>
+					<span id="messageUserOk" class="messageOk" style="display:none">Uživatel je v pořádku</span>
+					<span id="messageUserError" class="messageError" style="display:none">Uživatel musí mít 1-32 znaků!</span>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Heslo</td>
+				<td>
+					<input type="text" name="inputPassword" id="inputPassword" value="APIxxx">
+				</td>
+				<td>
+					<span id="messagePasswordOk" class="messageOk" style="display:none">Heslo je v pořádku</span>
+					<span id="messagePasswordError" class="messageError" style="display:none">Heslo musí mít 1-64 znaků!</span>
+				</td>
+			</tr>
+		</table>
+
+		<h2>Ovládání</h2>
+
+		<button type="buttonCheck" onclick="checkValues()">Zkontrolovat</button>
+		nebo
+		<button type="buttonCheckAndMakeXml" onclick="checkAndMakeXml()">zkontrolovat a připravit XML</button>
+		.
+
+		<h2>Todo</h2>
+
+		<ul>
+			<li>Nahrát výchozí hodnoty z posledního XML</li>
+			<li>Připravit XML</li>
+		</ul>
+
+		<h2>Debug</h2>
+
+		<p id="messageDebug" style="display:block"></p>
+
+	</body>
+
+</html>
